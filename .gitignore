@@ -1,0 +1,19 @@
+# Arquivos gerados na raiz
+documento.bbl
+documento.blg
+documento.brf
+documento.fdb_latexmk
+documento.fls
+documento.aux
+documento.log
+documento.out
+documento.toc
+documento.lof
+documento.lot
+documento.synctex.gz
+
+# Regra geral para garantir que subpastas fiquem limpas
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
