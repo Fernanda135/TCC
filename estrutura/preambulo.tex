@@ -1,3 +1,5 @@
+%! TEX root = ../documento.tex
+
 %% Preambulo LaTeX: Define classes e características do documento
 %% Definição do docuemnto
 \documentclass[
@@ -52,6 +54,21 @@
 \usepackage{abntex-ifpi/tikz-uml}	    % Pacote Tikz UML para criar UML no LaTeX
 
 \usepackage{adjustbox}
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}                 % limpa cabeçalho e rodapé
+\fancyhead[R]{\thepage}    % número da página no canto superior direito
+\renewcommand{\headrulewidth}{0pt} % remove a linha horizontal
+\renewcommand{\footrulewidth}{0pt}
+
+% Faz a primeira página de cada capítulo usar o mesmo estilo
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyhead[R]{\thepage}
+    \renewcommand{\headrulewidth}{0pt}
+}
 
 
 
