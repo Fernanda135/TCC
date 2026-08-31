@@ -1,0 +1,6 @@
+{
+  "latex-workshop.latex.rootFile.useSubFile": false,
+  "latex-workshop.latex.search.rootFiles.include": [
+    "documento.tex"
+  ]
+}
