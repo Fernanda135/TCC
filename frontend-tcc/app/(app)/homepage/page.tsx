@@ -6,7 +6,6 @@ export default function Homepage() {
     return (
         <div>
             <div>HOMEPAGE</div>
-            <ThemeToggle />
         </div>
     );
 };

@@ -10,9 +10,11 @@ import {
     VideogameAsset,
     Home,
     Person,
-    Logout
+    Logout,
+    Menu as MenuIcon,
+    Close
 } from "@mui/icons-material";
-import { Avatar, Box, Menu, MenuItem } from "@mui/material";
+import { Avatar, Box, Menu, MenuItem, Drawer } from "@mui/material";
 import Modal from '@mui/material/Modal';
 
 export default function Navbar() {
@@ -21,6 +23,7 @@ export default function Navbar() {
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
     const isMenuOpen = Boolean(anchorEl);
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     const handleAvatarClick = (event: React.MouseEvent<HTMLElement>) => {
         setAnchorEl(event.currentTarget);
@@ -39,13 +42,66 @@ export default function Navbar() {
         setIsModalOpen(false);
     };
 
+    const handleSidebarToggle = () => {
+        setIsSidebarOpen(!isSidebarOpen);
+    };
+
     const handleLogout = () => {
         handleMenuClose();
         router.push("/");
     };
 
     return (
-        <div className="flex flex-col lg:flex-row items-center p-2 max-w-6xl mx-auto">
+        <div className="flex items-center p-2 max-w-6xl mx-auto">
+            <div className="lg:hidden md:hidden">
+                <button
+                    onClick={handleSidebarToggle}
+                    className="p-2 rounded-md hover:bg-bg-surface cursor-pointer"
+                >
+                    <MenuIcon />
+                </button>
+                <Drawer
+                    anchor="left"
+                    open={isSidebarOpen}
+                    onClose={handleSidebarToggle}
+                >
+                    <div className="w-64 p-4">
+                        <div className="flex items-center justify-between mb-4">
+                            <h2 className="font-bold text-lg text-action-primary" >Spawn Ideias</h2>
+                            <button
+                                onClick={handleSidebarToggle}
+                                className="p-2 rounded-md hover:bg-bg-surface mb-4 cursor-pointer"
+                            >
+                                <Close />
+                            </button>
+                        </div>
+                        <nav className="flex flex-col space-y-2">
+                            <form className=" flex flex-1 items-center space-x-1 p-2 mx-2 max-w-96 border border-border-subtle bg-bg-canvas rounded-md">
+                                <Search className="h-4 text-text-secondary" />
+                                <input
+                                    type="text"
+                                    placeholder="Pesquisar..."
+                                    className="flex-1 outline-none text-text-primary placeholder:text-text-secondary bg-transparent"
+                                />
+                            </form>
+
+                            <Link href="/homepage" className="flex items-center space-x-2 p-2 rounded-md hover:bg-bg-surface">
+                                <Home className="h-5 w-5 text-text-secondary hover:text-text-primary" />
+                                <p className="text-sm text-text-secondary hover:text-text-primary">Início</p>
+                            </Link>
+                            <Link href="/homepage" className="flex items-center space-x-2 p-2 rounded-md hover:bg-bg-surface">
+                                <Forum className="h-5 w-5 text-text-secondary hover:text-text-primary" />
+                                <p className="text-sm text-text-secondary hover:text-text-primary">Mensagens</p>
+                            </Link>
+                            <Link href="/homepage" className="flex items-center space-x-2 p-2 rounded-md hover:bg-bg-surface">
+                                <VideogameAsset className="h-5 w-5 text-text-secondary hover:text-text-primary" />
+                                <p className="text-sm text-text-secondary hover:text-text-primary">Jogos</p>
+                            </Link>
+                        </nav>
+                    </div>
+                </Drawer>
+            </div>
+
             <div>
                 <Link href="/homepage" className="font-bold text-2xl text-action-primary whitespace-nowrap">
                     Spawn Ideias
@@ -54,7 +110,7 @@ export default function Navbar() {
 
             <div className="flex-1 flex items-center justify-center lg:justify-start mt-2 lg:mt-0">
                 <div className="flex-1">
-                    <form className="flex flex-1 items-center space-x-1 p-2 mx-2 max-w-96 border border-border-subtle bg-bg-canvas rounded-md">
+                    <form className="hidden md:flex lg:flex flex-1 items-center space-x-1 p-2 mx-2 max-w-96 border border-border-subtle bg-bg-canvas rounded-md">
                         <Search className="h-4 text-text-secondary" />
                         <input
                             type="text"

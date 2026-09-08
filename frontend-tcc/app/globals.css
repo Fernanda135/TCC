@@ -39,8 +39,8 @@
 }
 
 /* ---- Light mode ---- */
-:root,
-[data-theme="light"] {
+:root /* ,
+[data-theme="light"] */ {
   /* Fundo */
   --bg-canvas: #F8FAFC;
   --bg-surface: #FFFFFF;
@@ -69,33 +69,33 @@
 }
 
 /* ---- Dark mode ---- */
-[data-theme="dark"] {
+/* [data-theme="dark"] { */
   /* Fundo */
-  --bg-canvas: #050D27;
-  --bg-surface: #121A30;
+  /* --bg-canvas: #050D27;
+  --bg-surface: #121A30; */
 
   /* Texto */
-  --text-primary: #F9FAFB;
-  --text-secondary: #BDD0E3;
+  /* --text-primary: #F9FAFB;
+  --text-secondary: #BDD0E3; */
 
   /* Ações */
-  --action-primary: #ED8300;
+  /* --action-primary: #ED8300;
   --on-action-primary: #091E58;
   --action-secondary: #2563EB;
-  --on-action-secondary: #F9FAFB;
+  --on-action-secondary: #F9FAFB; */
 
   /* Bordas e divisores */
-  --border-subtle: #7B90C7;
+  /* --border-subtle: #7B90C7; */
 
   /* Estados semânticos de feedback */
-  --state-success: #25B170;
+  /* --state-success: #25B170;
   --state-success-bg: rgba(37, 177, 112, 0.15);
   --state-error: #D92632;
-  --state-error-bg: rgba(217, 38, 50, 0.15);
+  --state-error-bg: rgba(217, 38, 50, 0.15); */
 
   /* Estado de interação */
-  --state-active-bg: rgba(59, 130, 246, 0.15);
-}
+  /* --state-active-bg: rgba(59, 130, 246, 0.15); */
+/* } */
 
 .login-bg {
   background-color: var(--dark-blue);
