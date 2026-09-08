@@ -3,8 +3,8 @@
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
+import { Button } from "@mui/material";
 
-import { VideogameAsset } from "@mui/icons-material";
 
 export default function Home() {
 
@@ -40,12 +40,12 @@ export default function Home() {
                 placeholder="Password"
                 className="border border-(--border-subtle) rounded-md py-2 px-4 focus:outline-none focus:ring-2 focus:ring-(--orange)"
               />
-              <button
+              <Button
                 type="submit"
                 className="bg-(--orange) text-(--white) py-2 px-4 rounded-md hover:bg-orange-500 cursor-pointer transition-colors"
               >
                 Entrar
-              </button>
+              </Button>
 
               <Link href="/register" className="text-(--orange) text-center hover:underline">
                 Não tem uma conta? Cadastre-se

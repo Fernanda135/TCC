@@ -4,7 +4,7 @@ import React from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/dist/client/link";
 
-import { Avatar } from "@mui/material";
+import { Avatar, Button } from "@mui/material";
 
 export default function Register() {
 
@@ -84,12 +84,12 @@ export default function Register() {
                                 />
                             </div>
 
-                            <button
+                            <Button
                                 type="submit"
                                 className="bg-(--orange) text-(--white) py-2 px-4 rounded-md hover:bg-orange-500 cursor-pointer transition-colors"
                             >
                                 Cadastrar
-                            </button>
+                            </Button>
 
                             <Link href="/" className="text-(--orange) text-center hover:underline">
                                 Já tem uma conta? Faça login

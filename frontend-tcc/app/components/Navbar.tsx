@@ -123,21 +123,19 @@ export default function Navbar() {
                 <div className="flex items-center space-x-4 px-6">
                     <Link href="/homepage" className="icon flex flex-col items-center">
                         <Home className="h-5 w-5 text-text-secondary hover:text-text-primary" />
-                        <p className="text-sm text-text-secondary hover:text-text-primary">Início</p>
+                        <p className="text-sm text-text-primary">Início</p>
                     </Link>
                     <Link href="/homepage" className="icon hidden md:flex flex-col items-center">
                         <Forum className="h-5 w-5 text-text-secondary hover:text-text-primary" />
-                        <p className="text-sm text-text-secondary hover:text-text-primary">Mensagens</p>
+                        <p className="text-sm text-text-primary">Mensagens</p>
                     </Link>
                     <Link href="/homepage" className="icon hidden md:flex flex-col items-center">
                         <VideogameAsset className="h-5 w-5 text-text-secondary hover:text-text-primary" />
-                        <p className="text-sm text-text-secondary hover:text-text-primary">Jogos</p>
+                        <p className="text-sm text-text-primary">Jogos</p>
                     </Link>
 
                     <div>
                         <Avatar
-                            alt="User Avatar"
-                            src="/"
                             className="cursor-pointer"
                             sx={{ width: 32, height: 32 }}
                             onClick={handleAvatarClick}

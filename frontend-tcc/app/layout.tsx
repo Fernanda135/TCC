@@ -18,6 +18,7 @@ const geistMono = Geist_Mono({
 const rubik = Rubik({
   variable: "--font-rubik",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
