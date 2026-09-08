@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@layer components {
+  .icon {
+    @apply flex flex-col items-center justify-center text-sm font-light hover:text-text-primary hover:cursor-pointer;
+  }
+}
+
 /* ---- Mapeamento de Tokens do Tailwind ---- */
 @theme {
   --color-bg-canvas: var(--bg-canvas);
@@ -26,6 +32,7 @@
 
 :root {
   --dark-blue: #050D27;
+  --dark-blue-2: #121A30;
   --orange: #ED8300;
   --white: #FFFFFF;
   --login-bg: #F5F6F7;

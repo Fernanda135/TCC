@@ -1,130 +1,139 @@
 'use client';
 
-import { useState, useRef, useEffect } from "react";
+import React from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import {
     Search,
-    Message,
-    Notifications,
-    Help,
+    Forum,
+    VideogameAsset,
+    Home,
     Person,
-    Logout,
-    KeyboardArrowDown
+    Logout
 } from "@mui/icons-material";
-
-import { ThemeToggle } from "./ThemeToggle";
+import { Avatar, Box, Menu, MenuItem } from "@mui/material";
+import Modal from '@mui/material/Modal';
 
 export default function Navbar() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const dropdownRef = useRef<HTMLDivElement>(null);
     const router = useRouter();
 
-    useEffect(() => {
-        function handleClickOutside(event: MouseEvent) {
-            if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-                setIsMenuOpen(false);
-            }
-        }
-        document.addEventListener("mousedown", handleClickOutside);
-        return () => document.removeEventListener("mousedown", handleClickOutside);
-    }, []);
+    const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+    const isMenuOpen = Boolean(anchorEl);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleAvatarClick = (event: React.MouseEvent<HTMLElement>) => {
+        setAnchorEl(event.currentTarget);
+    };
+
+    const handleMenuClose = () => {
+        setAnchorEl(null);
+    };
+
+    const handleOpenProfileModal = () => {
+        handleMenuClose();
+        setIsModalOpen(true);
+    };
+
+    const handleCloseProfileModal = () => {
+        setIsModalOpen(false);
+    };
 
     const handleLogout = () => {
+        handleMenuClose();
         router.push("/");
     };
 
     return (
-        <header className="p-4 border-b border-border-subtle bg-bg-surface flex justify-between items-center gap-4">
-
-            <div className="flex items-center gap-6 flex-1 max-w-md">
+        <div className="flex flex-col lg:flex-row items-center p-2 max-w-6xl mx-auto">
+            <div>
                 <Link href="/homepage" className="font-bold text-2xl text-action-primary whitespace-nowrap">
                     Spawn Ideias
                 </Link>
-
-                <div className="relative w-full">
-                    <input
-                        type="text"
-                        placeholder="Pesquisar..."
-                        className="w-full pl-4 pr-10 py-2 rounded-lg border border-border-subtle bg-bg-canvas text-text-primary placeholder:text-text-secondary focus:outline-none focus:ring-2 focus:ring-action-primary text-sm transition-all"
-                    />
-                    <Search className="absolute right-3 top-1/2 -translate-y-1/2 text-text-secondary text-xl pointer-events-none" />
-                </div>
             </div>
 
-
-            <div className="flex items-center gap-3">
-                <ThemeToggle />
-
-                <button
-                    type="button"
-                    aria-label="Mensagens"
-                    className="p-2 bg-bg-canvas text-text-primary border border-border-subtle rounded-full hover:bg-state-active-bg transition-colors cursor-pointer flex items-center justify-center"
-                >
-                    <Message className="text-lg" />
-                </button>
-
-                <button
-                    type="button"
-                    aria-label="Notificações"
-                    className="p-2 bg-bg-canvas text-text-primary border border-border-subtle rounded-full hover:bg-state-active-bg transition-colors cursor-pointer flex items-center justify-center"
-                >
-                    <Notifications className="text-lg" />
-                </button>
-
-                <button
-                    type="button"
-                    aria-label="Ajuda"
-                    className="p-2 bg-bg-canvas text-text-primary border border-border-subtle rounded-full hover:bg-state-active-bg transition-colors cursor-pointer flex items-center justify-center"
-                >
-                    <Help className="text-lg" />
-                </button>
-
-
-                <div className="relative" ref={dropdownRef}>
-                    <button
-                        onClick={() => setIsMenuOpen(!isMenuOpen)}
-                        className="flex items-center gap-2 border border-border-subtle rounded-full py-1.5 px-3 cursor-pointer hover:bg-state-active-bg transition-colors bg-bg-canvas"
-                    >
-                        <div className="w-8 h-8 rounded-full bg-action-primary text-on-action-primary flex items-center justify-center font-bold text-sm">
-                            U
-                        </div>
-                        <span className="text-text-primary font-medium text-sm hidden sm:inline">
-                            Usuário
-                        </span>
-                        <KeyboardArrowDown
-                            className={`text-text-secondary transition-transform duration-200 ${isMenuOpen ? "rotate-180" : ""}`}
+            <div className="flex-1 flex items-center justify-center lg:justify-start mt-2 lg:mt-0">
+                <div className="flex-1">
+                    <form className="flex flex-1 items-center space-x-1 p-2 mx-2 max-w-96 border border-border-subtle bg-bg-canvas rounded-md">
+                        <Search className="h-4 text-text-secondary" />
+                        <input
+                            type="text"
+                            placeholder="Pesquisar..."
+                            className="flex-1 outline-none text-text-primary placeholder:text-text-secondary bg-transparent"
                         />
-                    </button>
+                    </form>
+                </div>
 
+                <div className="flex items-center space-x-4 px-6">
+                    <Link href="/homepage" className="icon flex flex-col items-center">
+                        <Home className="h-5 w-5 text-text-secondary hover:text-text-primary" />
+                        <p className="text-sm text-text-secondary hover:text-text-primary">Início</p>
+                    </Link>
+                    <Link href="/homepage" className="icon hidden md:flex flex-col items-center">
+                        <Forum className="h-5 w-5 text-text-secondary hover:text-text-primary" />
+                        <p className="text-sm text-text-secondary hover:text-text-primary">Mensagens</p>
+                    </Link>
+                    <Link href="/homepage" className="icon hidden md:flex flex-col items-center">
+                        <VideogameAsset className="h-5 w-5 text-text-secondary hover:text-text-primary" />
+                        <p className="text-sm text-text-secondary hover:text-text-primary">Jogos</p>
+                    </Link>
 
-                    {isMenuOpen && (
-                        <div className="absolute right-0 mt-2 w-48 bg-bg-surface border border-border-subtle rounded-xl shadow-lg py-2 z-50 animate-in fade-in zoom-in-95 duration-100">
-                            <div className="px-4 py-2 border-b border-border-subtle">
-                                <p className="text-sm font-semibold text-text-primary">Usuário</p>
-                                <p className="text-xs text-text-secondary truncate">usuario@email.com</p>
-                            </div>
+                    <div>
+                        <Avatar
+                            alt="User Avatar"
+                            src="/"
+                            className="cursor-pointer"
+                            sx={{ width: 32, height: 32 }}
+                            onClick={handleAvatarClick}
+                        />
 
-                            <Link
-                                href="/perfil"
-                                onClick={() => setIsMenuOpen(false)}
-                                className="flex items-center gap-2 px-4 py-2 text-sm text-text-primary hover:bg-state-active-bg transition-colors"
+                        <Menu
+                            anchorEl={anchorEl}
+                            open={isMenuOpen}
+                            onClose={handleMenuClose}
+                            transformOrigin={{ horizontal: 'right', vertical: 'top' }}
+                            anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
+                            slotProps={{
+                                paper: {
+                                    className: "bg-bg-surface text-text-primary border border-border-subtle rounded-xl shadow-lg mt-2 min-w-[160px]"
+                                }
+                            }}
+                        >
+                            <MenuItem
+                                onClick={handleOpenProfileModal}
+                                className="text-text-primary hover:bg-state-active-bg text-sm py-2 px-4 gap-2"
                             >
                                 <Person fontSize="small" className="text-text-secondary" />
                                 Meu Perfil
-                            </Link>
+                            </MenuItem>
 
-                            <button
+                            <MenuItem
                                 onClick={handleLogout}
-                                className="w-full flex items-center gap-2 px-4 py-2 text-sm text-state-error hover:bg-state-error-bg transition-colors cursor-pointer text-left"
+                                className="text-state-error hover:bg-state-error-bg text-sm py-2 px-4 gap-2"
                             >
-                                <Logout fontSize="small" />
+                                <Logout fontSize="small" className="text-state-error" />
                                 Sair
-                            </button>
-                        </div>
-                    )}
+                            </MenuItem>
+                        </Menu>
+
+                        <Modal
+                            open={isModalOpen}
+                            onClose={handleCloseProfileModal}
+                            aria-labelledby="modal-modal-title"
+                            aria-describedby="modal-modal-description"
+                        >
+                            <Box className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-bg-surface text-text-primary border border-border-subtle p-6 rounded-lg shadow-lg w-full max-w-md">
+                                <h2 id="modal-modal-title" className="text-lg font-bold mb-4">
+                                    Perfil do Usuário
+                                </h2>
+                                <p id="modal-modal-description" className="text-text-secondary">
+                                    Informações e detalhes da conta do usuário.
+                                </p>
+                            </Box>
+                        </Modal>
+                    </div>
                 </div>
             </div>
-        </header>
+        </div>
     );
 }
