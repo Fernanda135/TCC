@@ -33,7 +33,7 @@
 :root {
   --dark-blue: #050D27;
   --dark-blue-2: #121A30;
-  --orange: #ED8300;
+  --orange: #ff8c00;
   --white: #FFFFFF;
   --login-bg: #F5F6F7;
 }
@@ -50,13 +50,13 @@
   --text-secondary: #475569;
 
   /* Ações */
-  --action-primary: #ED8300;
+  --action-primary: #ff8c00;
   --on-action-primary: #091E58;
   --action-secondary: #2563EB;
   --on-action-secondary: #F9FAFB;
 
   /* Bordas e divisores */
-  --border-subtle: #8896AC;
+  --border-subtle: #cad1dd;
 
   /* Estados semânticos de feedback */
   --state-success: #1B7E50;

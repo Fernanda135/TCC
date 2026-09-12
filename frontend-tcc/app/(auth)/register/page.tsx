@@ -86,7 +86,8 @@ export default function Register() {
 
                             <Button
                                 type="submit"
-                                className="bg-(--orange) text-(--white) py-2 px-4 rounded-md hover:bg-orange-500 cursor-pointer transition-colors"
+                                variant="contained"
+                                className="bg-(--orange)! text-(--white) py-2 px-4 rounded-md hover:bg-orange-500! cursor-pointer transition-colors"
                             >
                                 Cadastrar
                             </Button>

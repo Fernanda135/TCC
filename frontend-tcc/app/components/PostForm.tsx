@@ -1,6 +1,6 @@
 'use client';
 
-import { Close, Image } from "@mui/icons-material";
+import { Close, Image, Send } from "@mui/icons-material";
 import { Button, Avatar } from "@mui/material";
 import React, { useRef, useState } from "react";
 import { size } from "zod";
@@ -49,8 +49,8 @@ function PostForm() {
         <div className="mb-2">
             <form ref={ref} action={FormData => {
                 handlePostAction(FormData);
-            }} className="p-3 bg-bg-surface rounded-lg border border-border-subtle">
-                <div className="flex items-center space-x-2">
+            }} className="px-3 bg-bg-surface rounded-lg border border-border-subtle">
+                <div className="flex items-center space-x-2 border-b border-b-border-subtle py-4">
                     <Avatar
                         alt="User Avatar"
                         sx={{ width: 55, height: 55 }}
@@ -72,7 +72,7 @@ function PostForm() {
                         onChange={handleImageChange}
                     />
 
-                    <button type="submit" hidden>Publicar</button>
+
                 </div>
 
                 {preview && (
@@ -81,28 +81,38 @@ function PostForm() {
                     </div>
                 )}
 
-                <div className="flex justify-end mt-2 gap-2">
-                    <Button
-                        type="button"
-                        variant="contained"
-                        className="bg-on-action-primary!"
-                        onClick={() => { fileInputRef.current?.click() }}
-                    >
-                        <Image sx={{ fontSize: 16 }} className="mr-2" />
-                        {preview ? "Trocar" : "Adicionar"} imagem
-                    </Button>
-
-                    {preview && (
+                <div className="flex items-center justify-between mt-2 gap-2 py-3">
+                    <div className="">
                         <Button
                             type="button"
                             variant="outlined"
                             className="border border-on-action-primary! text-on-action-primary!"
-                            onClick={() => SetPreview(null)}
+                            onClick={() => { fileInputRef.current?.click() }}
                         >
-                            <Close sx={{ fontSize: 16 }} className="mr-2" />
-                            Remover imagem
+                            <Image sx={{ fontSize: 16 }} className="mr-2" />
+                            {preview ? "Trocar" : ""} imagem
                         </Button>
-                    )}
+                        {preview && (
+                            <Button
+                                type="button"
+                                variant="outlined"
+                                className="bg-state-error-bg! border border-state-error! text-state-error!"
+                                onClick={() => SetPreview(null)}
+                            >
+                                <Close sx={{ fontSize: 16 }} className="mr-2" />
+                                Remover imagem
+                            </Button>
+                        )}
+                    </div>
+
+                    <Button
+                        type="submit"
+                        variant="contained"
+                        className="bg-on-action-primary!"
+                    >
+                        <Send sx={{ fontSize: 16 }} className="mr-2"/>
+                        Publicar
+                    </Button>
                 </div>
             </form>
 
