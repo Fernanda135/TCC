@@ -1,0 +1,157 @@
+
+% \chapter{LEVANTAMENTO DE REQUISITOS} \label{cha:levantamento_requisitos}
+
+
+
+% O levantamento de requisitos é uma ação fundamental no processo de engenharia de requisitos, ocorrendo principalmente na entre as atividades de comunicação com o cliente e a modelagem do sistema \cite{pressman2011}. 
+
+% A etapa de levantamento consiste em identificar o problema, compreender as reais necessidades e expectativas dos diversos \textit{stakeholders} (clientes, usuários finais, gerentes e equipes técnicas) e definir o que o software deve fazer. Ela é fundamental porque estabelece a base entre as necessidades do cliente e a modelagem técnica do sistema, previnindo falhas de comunicação e garantindo que o produto final atenda às expectativas do usuário \cite{pressman2011}.
+
+% Neste trabalho, essa etapa teve como objetivo identificar as necessidades e preferências de jogadores e desenvolvedores de jogos digitais, com o intuito de definir os requisitos de interface da plataforma proposta.
+
+% Para a coleta de dados, foram elaborados dois questionários on-line, utilizando o Google Forms\footnote{\url{https://docs.google.com/forms/u/0/}}, destinados a públicos distintos: jogadores e desenvolvedores de jogos digitais. A utilização de instrumentos separados permitiu abordar as necessidades específicas de cada perfil de usuário.
+
+% % Os instrumentos utilizados na coleta de dados, correspondentes aos questionários destinados aos jogadores e aos desenvolvedores, encontram-se disponibilizados na seção de apêndices deste trabalho, permitindo a consulta às perguntas utilizadas no levantamento de requisitos.
+
+
+
+
+% % \section{ATORES DO SISTEMA} \label{sec:atores_sistema}
+
+% % Foram definidos dois perfis de usuários que interagem com a plataforma proposta:
+
+% % \begin{table}[H]
+% %     \caption{Perfis de usuários da plataforma}
+% % \centering
+% % \small
+% % \renewcommand{\arraystretch}{1.4}
+% % \begin{tabular}{|c|>{\centering\arraybackslash}p{3.2cm}|p{7.5cm}|}
+% % \hline
+% % \textbf{ID} & \textbf{Ator} & \textbf{Descrição} \\
+% % \hline
+% % A01 & Jogador & Usuário que interage com a plataforma para enviar feedbacks sobre jogos digitais, podendo acompanhar o status de seus feedbacks e receber respostas dos desenvolvedores. \\
+% % \hline
+% % A02 & Desenvolvedor & Usuário que interage com a plataforma para gerenciar os feedbacks recebidos sobre seus jogos digitais, podendo responder aos feedbacks, atualizar seu status e analisar métricas relacionadas. \\
+% % \hline
+% % \end{tabular}
+% % \label{tab:atores}
+% % \legend{Fonte: Autora (2026).}
+% % \end{table}
+
+% % \section{ANÁLISE DE REQUISITOS} \label{sec:analise_requisitos}
+
+% % A análise de requisitos é a ação na qual as necessidades básicas coletadas do cliente e de outros interessados são refinadas, elaboradas e estruturadas. Ela atua como a ponte direta entre o levantamento de requisitos e a modelagem do sistema, garantindo que as necessidades do cliente sejam compreendidas e traduzidas em especificações técnicas claras e precisas \cite{pressman2011}.
+
+% % Os requisitos podem ser classificados em duas categorias: requisitos funcionais e requisitos não funcionais. Os requisitos funcionais descrevem o que o sistema deve fazer, enquanto os requisitos não funcionais descrevem como o sistema deve se comportar.
+
+
+% \section{Requisitos funcionais}
+
+% % \begin{table}[H]
+% %     \caption{Requisitos funcionais do perfil desenvolvedor}
+% % \centering
+% % \small
+% % \renewcommand{\arraystretch}{1.4}
+% % \begin{tabular}{|c|>{\centering\arraybackslash}p{3.2cm}|p{7.5cm}|}
+% % \hline
+% % \textbf{ID} & \textbf{Requisito} & \textbf{Descrição} \\
+% % \hline
+% % RF08 & Cadastro de jogos & O sistema deve permitir que o desenvolvedor cadastre, altere e remova seus jogos na plataforma. \\
+% % \hline
+% % RF09 & Painel centralizado & O sistema deve reunir em um único painel todos os feedbacks recebidos de cada jogo cadastrado. \\
+% % \hline
+% % RF10 & Filtro por tipo & O sistema deve permitir que o desenvolvedor filtre os feedbacks por tipo (bug, sugestão, elogio ou crítica). \\
+% % \hline
+% % RF11 & Filtro por urgência & O sistema deve permitir que o desenvolvedor filtre e ordene os feedbacks por nível de urgência. \\
+% % \hline
+% % RF12 & Resposta e status & O sistema deve permitir que o desenvolvedor responda publicamente ao feedback e atualize seu status (em análise, implementado ou recusado). \\
+% % \hline
+% % RF13 & Filtro por fase de desenvolvimento & O sistema deve permitir que o desenvolvedor filtre os feedbacks por fase do jogo (early access ou pós-lançamento). \\
+% % \hline
+% % RF14 & Visualização em cards & O sistema deve exibir os feedbacks em cards organizados por categoria e urgência. \\
+% % \hline
+% % RF15 & Métricas e gráficos & O sistema deve exibir gráficos e métricas sobre os feedbacks. \\
+% % \hline
+% % \end{tabular}
+% % \label{tab:rf-desenvolvedor}
+% % \legend{Fonte: Autora (2026).}
+% % \end{table}
+
+% % \begin{table}[H]
+% %     \caption{Requisitos funcionais do perfil jogador}
+% % \centering
+% % \small
+% % \renewcommand{\arraystretch}{1.4}
+% % \begin{tabular}{|c|>{\centering\arraybackslash}p{3.2cm}|p{7.5cm}|}
+% % \hline
+% % \textbf{ID} & \textbf{Requisito} & \textbf{Descrição} \\
+% % \hline
+% % RF01 & Envio de feedback & O sistema deve permitir que o jogador envie feedback vinculado a um jogo específico. \\
+% % \hline
+% % RF02 & Status do feedback & O sistema deve exibir ao jogador o status do feedback enviado (recebido, em análise, respondido ou implementado). \\
+% % \hline
+% % RF03 & Formulário simplificado & O sistema deve oferecer um formulário de envio curto por padrão, com campos opcionais expansíveis. \\
+% % \hline
+% % RF04 & Classificação do feedback & O sistema deve permitir que o jogador classifique o feedback por tipo (bug, sugestão, gameplay, elogio, gráficos/arte ou narrativa). \\
+% % \hline
+% % RF05 & Busca de jogos & O sistema deve permitir que o jogador busque jogos pelo nome. \\
+% % \hline
+% % RF06 & Resposta do desenvolvedor & O sistema deve exibir ao jogador a resposta pública do desenvolvedor ao feedback enviado. \\
+% % \hline
+% % RF07 & Histórico de feedbacks & O sistema deve permitir que o jogador consulte a lista dos feedbacks que enviou. \\
+% % \hline
+% % \end{tabular}
+% % \label{tab:rf-jogador}
+% % \legend{Fonte: Autora (2026).}
+% % \end{table}
+
+
+
+% \section{Requisitos não funcionais}
+
+% % \begin{table}[H]
+% %     \caption{Requisitos não funcionais comuns aos perfis jogador e desenvolvedor}
+% % \centering
+% % \small
+% % \renewcommand{\arraystretch}{1.4}
+% % \begin{tabular}{|c|>{\centering\arraybackslash}p{3.2cm}|p{7.5cm}|}
+% % \hline
+% % \textbf{ID} & \textbf{Requisito} & \textbf{Descrição} \\
+% % \hline
+% % RNF06 & Otimização para desktop & O painel do desenvolvedor deve ser otimizado primeiro para computadores, mantendo a responsividade. \\
+% % \hline
+% % RNF07 & Destaque de prioridades & O painel deve destacar visualmente os feedbacks urgentes, facilitando a identificação dos prioritários. \\
+% % \hline
+% % RNF08 & Consistência & A interface deve seguir os mesmos padrões de usabilidade e acessibilidade da área do jogador. \\
+% % \hline
+% % \end{tabular}
+% % \label{tab:rnf-desenvolvedor}
+% % \legend{Fonte: Autora (2026).}
+% % \end{table}
+
+% % \begin{table}[H]
+% %     \caption{Requisitos não funcionais do perfil jogador}
+% % \centering
+% % \small
+% % \renewcommand{\arraystretch}{1.4}
+% % \begin{tabular}{|c|>{\centering\arraybackslash}p{3.2cm}|p{7.5cm}|}
+% % \hline
+% % \textbf{ID} & \textbf{Requisito} & \textbf{Descrição} \\
+% % \hline
+% % RNF01 & Responsividade & A interface deve se adaptar a dispositivos móveis e computadores. \\
+% % \hline
+% % RNF02 & Layout simples & A interface deve ter layout limpo, com poucos elementos por tela. \\
+% % \hline
+% % RNF03 & Navegação eficiente & O sistema deve permitir acesso a qualquer conteúdo com poucos cliques. \\
+% % \hline
+% % RNF04 & Desempenho & As telas devem carregar rapidamente. \\
+% % \hline
+% % RNF05 & Acessibilidade & A interface deve seguir diretrizes básicas de acessibilidade, como contraste e legibilidade. \\
+% % \hline
+% % \end{tabular}
+% % \label{tab:rnf-jogador}
+% % \legend{Fonte: Autora (2026).}
+% % \end{table}
+
+
+

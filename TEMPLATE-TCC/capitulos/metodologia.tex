@@ -1,0 +1,234 @@
+% ----------------------------------------------------------
+% Metodologia
+% ----------------------------------------------------------
+\chapter{METODOLOGIA}
+\label{cha:metodologia}
+
+% Este capítulo apresenta os procedimentos metodológicos empregados na realização da pesquisa, no desenvolvimento e na avaliação da solução implementada.
+
+% \section{MODALIDADE E ABORDAGEM DA PESQUISA}
+% \label{sec:pesquisa}
+
+
+
+\section{LEVANTAMENTO DE REQUISITOS} \label{sec:levantamento_requisitos}
+
+
+
+O levantamento de requisitos é uma ação fundamental no processo de engenharia de requisitos, ocorrendo principalmente na entre as atividades de comunicação com o cliente e a modelagem do sistema \cite{pressman2011}. 
+
+A etapa de levantamento consiste em identificar o problema, compreender as reais necessidades e expectativas dos diversos \textit{stakeholders} (clientes, usuários finais, gerentes e equipes técnicas) e definir o que o software deve fazer. Ela é fundamental porque estabelece a base entre as necessidades do cliente e a modelagem técnica do sistema, previnindo falhas de comunicação e garantindo que o produto final atenda às expectativas do usuário \cite{pressman2011}.
+
+Neste trabalho, essa etapa teve como objetivo identificar as necessidades e preferências de jogadores e desenvolvedores de jogos digitais, com o intuito de definir os requisitos de interface da plataforma proposta.
+
+Para a coleta de dados, foram elaborados dois questionários on-line, utilizando o Google Forms\footnote{\url{https://docs.google.com/forms/u/0/}}, destinados a públicos distintos: jogadores e desenvolvedores de jogos digitais. A utilização de instrumentos separados permitiu abordar as necessidades específicas de cada perfil de usuário.
+
+Os questionários ficaram disponíveis para resposta durante 14 dias, no período de 22/09 a 06/10. Ao final desse período, foram obtidas 11 respostas de jogadores e 7 respostas de desenvolvedores, totalizando 18 participantes.
+
+Os instrumentos utilizados na coleta de dados, correspondentes aos questionários destinados aos jogadores e aos desenvolvedores, encontram-se disponibilizados na seção de apêndices deste trabalho.
+
+
+% \subsection{Requisitos funcionais}
+
+% \begin{table}[H]
+%     \caption{Requisitos funcionais do perfil desenvolvedor}
+% \centering
+% \small
+% \renewcommand{\arraystretch}{1.4}
+% \begin{tabular}{|c|>{\centering\arraybackslash}p{3.2cm}|p{7.5cm}|}
+% \hline
+% \textbf{ID} & \textbf{Requisito} & \textbf{Descrição} \\
+% \hline
+% RF01 & Cadastro de jogos & O sistema deve permitir que o desenvolvedor cadastre, altere e remova seus jogos na plataforma. \\
+% \hline
+% RF02 & Painel centralizado & O sistema deve reunir em um único painel todos os feedbacks recebidos de cada jogo cadastrado. \\
+% \hline
+% RF03 & Filtro por tipo & O sistema deve permitir que o desenvolvedor filtre os feedbacks por tipo. \\
+% \hline
+% RF04 & Filtro por urgência & O sistema deve permitir que o desenvolvedor filtre e ordene os feedbacks por nível de urgência. \\
+% \hline
+% RF05 & Resposta e status & O sistema deve permitir que o desenvolvedor responda publicamente ao feedback e atualize seu status (em análise, implementado ou recusado). \\
+% \hline
+% RF06 & Visualização em cards & O sistema deve exibir os feedbacks em cards organizados por categoria e urgência. \\
+% \hline
+% RF07 & Métricas e gráficos & O sistema deve exibir gráficos e métricas sobre os feedbacks. \\
+% \hline
+% \end{tabular}
+% \label{tab:rf-desenvolvedor}
+% \legend{Fonte: Autora (2026).}
+% \end{table}
+
+% \begin{table}[H]
+%     \caption{Requisitos funcionais do perfil jogador}
+% \centering
+% \small
+% \renewcommand{\arraystretch}{1.4}
+% \begin{tabular}{|c|>{\centering\arraybackslash}p{3.2cm}|p{7.5cm}|}
+% \hline
+% \textbf{ID} & \textbf{Requisito} & \textbf{Descrição} \\
+% \hline
+% RF08 & Envio de feedback & O sistema deve permitir que o jogador envie feedback vinculado a um jogo específico. \\
+% \hline
+% RF09 & Status do feedback & O sistema deve exibir ao jogador o status do feedback enviado (recebido, em análise, respondido ou implementado). \\
+% \hline
+% RF10 & Formulário simplificado & O sistema deve oferecer um formulário de envio curto por padrão, com campos opcionais expansíveis. \\
+% \hline
+% RF11 & Classificação do feedback & O sistema deve permitir que o jogador classifique o feedback por tipo. \\
+% \hline
+% RF12 & Busca de jogos & O sistema deve permitir que o jogador busque jogos pelo nome. \\
+% \hline
+% RF13 & Resposta do desenvolvedor & O sistema deve exibir ao jogador a resposta pública do desenvolvedor ao feedback enviado. \\
+% \hline
+% RF14 & Histórico de feedbacks & O sistema deve permitir que o jogador consulte a lista dos feedbacks que enviou. \\
+% \hline
+% \end{tabular}
+% \label{tab:rf-jogador}
+% \legend{Fonte: Autora (2026).}
+% \end{table}
+
+
+
+% \subsection{Requisitos não funcionais}
+
+% \begin{table}[H]
+%     \caption{Requisitos não funcionais comuns aos perfis jogador e desenvolvedor}
+% \centering
+% \small
+% \renewcommand{\arraystretch}{1.4}
+% \begin{tabular}{|c|>{\centering\arraybackslash}p{3.2cm}|p{7.5cm}|}
+% \hline
+% \textbf{ID} & \textbf{Requisito} & \textbf{Descrição} \\
+% \hline
+% RNF01 & Usabilidade e facilidade de aprendizado &
+% A interface deve permitir que os usuários compreendam sua organização, encontrem as funcionalidades e realizem as principais tarefas com facilidade. \\ 
+% \hline
+% RNF02 & Responsividade & A interface deve adaptar-se a diferentes tamanhos de tela, incluindo dispositivos móveis, tablets e computadores. \\ \hline
+% RNF03 & Acessibilidade &
+% A interface deve adotar recursos que favoreçam a acessibilidade, como contraste adequado, textos legíveis e elementos de interação identificáveis. \\ 
+% \hline
+% RNF04 & Consistência visual &
+% A interface deve manter padrões consistentes de cores, tipografia, ícones, botões e componentes ao longo das telas. \\ 
+% \hline
+% RNF05 & Organização da informação & A interface deve apresentar os feedbacks de maneira organizada, com categorias e informações visualmente diferenciadas para facilitar sua identificação. \\ ncionais}
+
+% \begin{table}[H]
+%     \caption{Requisitos funcionais do perfil desenvolvedor}
+% \centering
+% \small
+% \renewcommand{\arraystretch}{1.4}
+% \begin{tabular}{|c|>{\centering\arraybackslash}p{3.2cm}|p{7.5cm}|}
+% \hline
+% \textbf{ID} & \textbf{Requisito} & \textbf{Descrição} \\
+% \hline
+% RF01 & Cadastro de jogos & O sistema deve permitir que o desenvolvedor cadastre, altere e remova seus jogos na plataforma. \\
+% \hline
+% RF02 & Painel centralizado & O sistema deve reunir em um único painel todos os feedbacks recebidos de cada jogo cadastrado. \\
+% \hline
+% RF03 & Filtro por tipo & O sistema deve permitir que o desenvolvedor filtre os feedbacks por tipo. \\
+% \hline
+% RF04 & Filtro por urgência & O sistema deve permitir que o desenvolvedor filtre e ordene os feedbacks por nível de urgência. \\
+% \hline
+% RF05 & Resposta e status & O sistema deve permitir que o desenvolvedor responda publicamente ao feedback e atualize seu status (em análise, implementado ou recusado). \\
+% \hline
+% RF06 & Visualização em cards & O sistema deve exibir os feedbacks em cards organizados por categoria e urgência. \\
+% \hline
+% RF07 & Métricas e gráficos & O sistema deve exibir gráficos e métricas sobre os feedbacks. \\
+% \hline
+% \end{tabular}
+% \label{tab:rf-desenvolvedor}
+% \legend{Fonte: Autora (2026).}
+% \end{table}
+
+% \begin{table}[H]
+%     \caption{Requisitos funcionais do perfil jogador}
+% \centering
+% \small
+% \renewcommand{\arraystretch}{1.4}
+% \begin{tabular}{|c|>{\centering\arraybackslash}p{3.2cm}|p{7.5cm}|}
+% \hline
+% \textbf{ID} & \textbf{Requisito} & \textbf{Descrição} \\
+% \hline
+% RF08 & Envio de feedback & O sistema deve permitir que o jogador envie feedback vinculado a um jogo específico. \\
+% \hline
+% RF09 & Status do feedback & O sistema deve exibir ao jogador o status do feedback enviado (recebido, em análise, respondido ou implementado). \\
+% \hline
+% RF10 & Formulário simplificado & O sistema deve oferecer um formulário de envio curto por padrão, com campos opcionais expansíveis. \\
+% \hline
+% RF11 & Classificação do feedback & O sistema deve permitir que o jogador classifique o feedback por tipo. \\
+% \hline
+% RF12 & Busca de jogos & O sistema deve permitir que o jogador busque jogos pelo nome. \\
+% \hline
+% RF13 & Resposta do desenvolvedor & O sistema deve exibir ao jogador a resposta pública do desenvolvedor ao feedback enviado. \\
+% \hline
+% RF14 & Histórico de feedbacks & O sistema deve permitir que o jogador consulte a lista dos feedbacks que enviou. \\
+% \hline
+% \end{tabular}
+% \label{tab:rf-jogador}
+% \legend{Fonte: Autora (2026).}
+% \end{table}
+
+
+
+% \subsection{Requisitos não funcionais}
+
+% \begin{table}[H]
+%     \caption{Requisitos não funcionais comuns aos perfis jogador e desenvolvedor}
+% \centering
+% \small
+% \renewcommand{\arraystretch}{1.4}
+% \begin{tabular}{|c|>{\centering\arraybackslash}p{3.2cm}|p{7.5cm}|}
+% \hline
+% \textbf{ID} & \textbf{Requisito} & \textbf{Descrição} \\
+% \hline
+% RNF01 & Usabilidade e facilidade de aprendizado &
+% A interface deve permitir que os usuários compreendam sua organização, encontrem as funcionalidades e realizem as principais tarefas com facilidade. \\ 
+% \hline
+% RNF02 & Responsividade & A interface deve adaptar-se a diferentes tamanhos de tela, incluindo dispositivos móveis, tablets e computadores. \\ \hline
+% RNF03 & Acessibilidade &
+% A interface deve adotar recursos que favoreçam a acessibilidade, como contraste adequado, textos legíveis e elementos de interação identificáveis. \\ 
+% \hline
+% RNF04 & Consistência visual &
+% A interface deve manter padrões consistentes de cores, tipografia, ícones, botões e componentes ao longo das telas. \\ 
+% \hline
+% RNF05 & Organização da informação & A interface deve apresentar os feedbacks de maneira organizada, com categorias e informações visualmente diferenciadas para facilitar sua identificação. \\ 
+% \hline
+% RNF06 & Desempenho & A interface deve apresentar tempos de carregamento e transições entre telas adequados à utilização da plataforma. \\ 
+% \hline
+% RNF07 & Legibilidade & A interface deve apresentar textos, rótulos, mensagens e informações sobre o status dos feedbacks de forma clara e compreensível. \\ 
+% \hline
+% RNF08 & Eficiência de interação & A interface deve permitir o envio de feedbacks com poucos passos, oferecendo um formulário conciso e a possibilidade de fornecer informações adicionais. \\ 
+% \hline
+% \end{tabular}
+% \label{tab:rnf-desenvolvedor}
+% \legend{Fonte: Autora (2026).}
+% \end{table}
+
+
+% \hline
+% RNF06 & Desempenho & A interface deve apresentar tempos de carregamento e transições entre telas adequados à utilização da plataforma. \\ 
+% \hline
+% RNF07 & Legibilidade & A interface deve apresentar textos, rótulos, mensagens e informações sobre o status dos feedbacks de forma clara e compreensível. \\ 
+% \hline
+% RNF08 & Eficiência de interação & A interface deve permitir o envio de feedbacks com poucos passos, oferecendo um formulário conciso e a possibilidade de fornecer informações adicionais. \\ 
+% \hline
+% \end{tabular}
+% \label{tab:rnf-desenvolvedor}
+% \legend{Fonte: Autora (2026).}
+% \end{table}
+
+% \subsection{Diagrama de Caso de Uso UML}
+
+
+
+
+% \section{CARACTERIZAÇÃO DO PROTÓTIPO E ARQUITETURA DO SISTEMA}
+% \label{sec:arquitetura}
+
+% \section{TECNOLOGIAS UTILIZADAS}
+% \label{sec:tecnologias}
+
+% \section{DESENVOLVIMENTO E IMPLEMENTAÇÃO}
+% \label{sec:desenvolvimento}
+
+% \section{TESTES E AVALIAÇÃO DO SISTEMA}
+% \label{sec:avaliacao}

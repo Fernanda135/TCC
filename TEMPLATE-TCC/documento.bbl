@@ -1,0 +1,76 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[{ABRAGAMES} 2023]{abragames2023}
+\abntrefinfo{{ABRAGAMES}}{{ABRAGAMES}}{2023}
+{{ABRAGAMES}. \textbf{Fact Sheet: Ind\'ustria Brasileira de Games 2023}.
+S{\~a}o Paulo, 2023. Dispon{\'\i}vel em: \url{https://www.abragames.org/uploads/5/6/8/0/56805537/2023\_fact\_sheet\_v1.6.2\_-\_ptbr\_version.pdf}. Acesso em: 14 out. 2026.}
+
+\bibitem[Alves e Hostins 2019]{alves2019}
+\abntrefinfo{Alves e Hostins}{ALVES; HOSTINS}{2019}
+{ALVES, A.~G.; HOSTINS, R. C.~L. Elabora{\c{c}}{\~a}o conceitual por meio da cria{\c{c}}{\~a}o colaborativa e coletiva de jogos digitais na perspectiva da educa{\c{c}}{\~a}o inclusiva.
+\textbf{Revista Brasileira de Educa{\c{c}}{\~a}o Especial}, v.~25, n.~4, p. 709--728, 2019.
+Dispon{\'\i}vel em: \url{https://www.scielo.br/j/rbee/a/T93Xyy6FGF4CX7TqGLdxSQP/}. Acesso em: 28 out. 2026.}
+
+\bibitem[{BAIN \& COMPANY} 2025]{bain2025}
+\abntrefinfo{{BAIN \& COMPANY}}{{BAIN \& COMPANY}}{2025}
+{{BAIN \& COMPANY}. \textbf{Gaming Report 2025}. 2025.
+Dispon{\'\i}vel em: \url{https://www.bain.com/pt-br/insights/topics/gaming-report/}. Acesso em: 13 out. 2026.}
+
+\bibitem[Barbosa e Silva 2010]{barbosa2010}
+\abntrefinfo{Barbosa e Silva}{BARBOSA; SILVA}{2010}
+{BARBOSA, S. D.~J.; SILVA, B. S.~d. \textbf{Intera{\c{c}}{\~a}o Humano-Computador}. Rio de Janeiro: Elsevier, 2010.}
+
+\bibitem[Lin{\aa}ker, Bjarnason e Fagerholm 2024]{linaker2024}
+\abntrefinfo{Lin{\aa}ker, Bjarnason e Fagerholm}{LIN{\AA}KER; BJARNASON; FAGERHOLM}{2024}
+{LIN{\AA}KER, J.; BJARNASON, E.; FAGERHOLM, F. Pre-release experimentation in indie game development: An interview survey. In:  \textbf{International Conference on Software Business}. Springer Nature Switzerland, 2024. p. 293--308.
+Dispon{\'\i}vel em: \url{https://link.springer.com/chapter/10.1007/978-3-031-85849-9\_24}. Acesso em: 28 out. 2026.}
+
+\bibitem[Mbakirtzis 2023]{mbakirtzis2023}
+\abntrefinfo{Mbakirtzis}{MBAKIRTZIS}{2023}
+{MBAKIRTZIS, M.~M.
+\textbf{Análise do crescimento da indústria dos jogos digitais}.
+Monografia (Trabalho de Conclusão de Curso (Bacharelado em Ciência da Computação)) --- Universidade Estadual Paulista ``Júlio de Mesquita Filho'', Bauru, 2023.}
+
+\bibitem[{NEWZOO} 2025]{newzoo2025}
+\abntrefinfo{{NEWZOO}}{{NEWZOO}}{2025}
+{{NEWZOO}. \textbf{2025 Newzoo Global Games Market Report}.
+[S.l.], 2025. Dispon{\'\i}vel em: \url{https://investgame.net/wp-content/uploads/2025/09/2025\_Newzoo\_Free\_Global\_Games\_Market\_Report.pdf}. Acesso em: 13 out. 2026.}
+
+\bibitem[Nielsen 1993]{nielsen1993}
+\abntrefinfo{Nielsen}{NIELSEN}{1993}
+{NIELSEN, J. \textbf{Usability Engineering}. San Diego, CA: Morgan Kaufmann / Academic Press, 1993.}
+
+\bibitem[Pressman 2011]{pressman2011}
+\abntrefinfo{Pressman}{PRESSMAN}{2011}
+{PRESSMAN, R.~S. \textbf{Engenharia de software: uma abordagem profissional}. 7. ed. Porto Alegre: AMGH, 2011.}
+
+\bibitem[Thominet 2018]{thominet2018}
+\abntrefinfo{Thominet}{THOMINET}{2018}
+{THOMINET, L. How to be open: User experience and technical communication in an emerging game development methodology.
+\textbf{Communication Design Quarterly}, v.~6, n.~2, p. 70--82, 2018.
+Dispon{\'\i}vel em: \url{https://dl.acm.org/doi/10.1145/3231702.3231709}. Acesso em: 13 out. 2026.}
+
+\bibitem[Tong 2022]{tong2022}
+\abntrefinfo{Tong}{TONG}{2022}
+{TONG, X. Understanding extended testing feedback: Positioning platforms as a key factor in independent game development.
+\textbf{Press Start}, Glasgow, v.~8, n.~2, p. 44--65, 2022.
+Dispon{\'\i}vel em: \url{https://press-start.gla.ac.uk/press-start/article/view/197}. Acesso em: 13 out. 2026.}
+
+\bibitem[Uchoa e Coutinho 2018]{uchoa2018}
+\abntrefinfo{Uchoa e Coutinho}{UCHOA; COUTINHO}{2018}
+{UCHOA, A. H.~R.; COUTINHO, E.~F. De que forma a cultura do compartilhamento e modifica{\c{c}}{\~a}o pode colaborar no processo de desenvolvimento de jogos? In:  \textbf{Anais...} Sociedade Brasileira de Computa{\c{c}}{\~a}o, 2018. Dispon{\'\i}vel em: \url{https://sol.sbc.org.br/index.php/washes/article/view/3475}. Acesso em: 13 out. 2026.}
+
+\bibitem[Vargas, Alves e Veloso 2018]{vargas2018}
+\abntrefinfo{Vargas, Alves e Veloso}{VARGAS; ALVES; VELOSO}{2018}
+{VARGAS, C.~C.; ALVES, S. T. d.~J.; VELOSO, R.~R. Feedback do consumidor e processo de inova{\c{c}}{\~a}o em jogos digitais: o caso pok{\'e}mon go. In:  \textbf{Anais...} [s.n.], 2018. Dispon{\'\i}vel em: \url{https://singep.org.br/7singep/resultado/400.pdf}. Acesso em: 28 out. 2026.}
+
+\bibitem[Xiao 2025]{xiao2025}
+\abntrefinfo{Xiao}{XIAO}{2025}
+{XIAO, X. A study on the interaction between fan community and game developer in the process of game development and its impact in the digital era: A case study of baldur's gate 3. In:  \textbf{Proceedings...} [s.n.], 2025. Dispon{\'\i}vel em: \url{https://www.scitepress.org/Papers/2025/139619/139619.pdf}. Acesso em: 14 out. 2026.}
+
+\end{thebibliography}
