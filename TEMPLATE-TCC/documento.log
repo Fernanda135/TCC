@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.8.6)  28 OCT 2026 19:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.8.6)  28 OCT 2026 19:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1555,24 +1555,19 @@ bibitemlist
 [21
 
 
-])) (./pos-textual/glossario.tex) (./pos-textual/apendices.tex [22]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\uppercase' on input line 7.
-
-[23
+])) (./pos-textual/glossario.tex) (./pos-textual/apendices.tex [22] [23
 
 
 ]
 <imagens/quest-jog-1.jpg, id=298, 598.3956pt x 845.559pt>
 File: imagens/quest-jog-1.jpg Graphic file (type jpg)
 <use imagens/quest-jog-1.jpg>
-Package pdftex.def Info: imagens/quest-jog-1.jpg  used on input line 12.
+Package pdftex.def Info: imagens/quest-jog-1.jpg  used on input line 15.
 (pdftex.def)             Requested size: 455.0pt x 642.95409pt.
 <imagens/quest-jog-2.jpg, id=299, 598.3956pt x 845.559pt>
 File: imagens/quest-jog-2.jpg Graphic file (type jpg)
 <use imagens/quest-jog-2.jpg>
-Package pdftex.def Info: imagens/quest-jog-2.jpg  used on input line 17.
+Package pdftex.def Info: imagens/quest-jog-2.jpg  used on input line 20.
 (pdftex.def)             Requested size: 455.0pt x 642.95409pt.
  [24
 
@@ -1580,24 +1575,24 @@ Package pdftex.def Info: imagens/quest-jog-2.jpg  used on input line 17.
 <imagens/quest-jog-3.jpg, id=306, 598.3956pt x 845.559pt>
 File: imagens/quest-jog-3.jpg Graphic file (type jpg)
 <use imagens/quest-jog-3.jpg>
-Package pdftex.def Info: imagens/quest-jog-3.jpg  used on input line 22.
+Package pdftex.def Info: imagens/quest-jog-3.jpg  used on input line 25.
 (pdftex.def)             Requested size: 455.0pt x 642.95409pt.
  [25 <./imagens/quest-jog-2.jpg>]
 <imagens/quest-jog-4.jpg, id=312, 598.3956pt x 845.559pt>
 File: imagens/quest-jog-4.jpg Graphic file (type jpg)
 <use imagens/quest-jog-4.jpg>
-Package pdftex.def Info: imagens/quest-jog-4.jpg  used on input line 27.
+Package pdftex.def Info: imagens/quest-jog-4.jpg  used on input line 30.
 (pdftex.def)             Requested size: 455.0pt x 642.95409pt.
  [26 <./imagens/quest-jog-3.jpg>] [27 <./imagens/quest-jog-4.jpg>]
 <imagens/quest-dev-1.jpg, id=323, 598.3956pt x 845.559pt>
 File: imagens/quest-dev-1.jpg Graphic file (type jpg)
 <use imagens/quest-dev-1.jpg>
-Package pdftex.def Info: imagens/quest-dev-1.jpg  used on input line 36.
+Package pdftex.def Info: imagens/quest-dev-1.jpg  used on input line 39.
 (pdftex.def)             Requested size: 455.0pt x 642.95409pt.
 <imagens/quest-dev-2.jpg, id=324, 598.3956pt x 845.559pt>
 File: imagens/quest-dev-2.jpg Graphic file (type jpg)
 <use imagens/quest-dev-2.jpg>
-Package pdftex.def Info: imagens/quest-dev-2.jpg  used on input line 41.
+Package pdftex.def Info: imagens/quest-dev-2.jpg  used on input line 44.
 (pdftex.def)             Requested size: 455.0pt x 642.95409pt.
  [28
 
@@ -1605,13 +1600,13 @@ Package pdftex.def Info: imagens/quest-dev-2.jpg  used on input line 41.
 <imagens/quest-dev-3.jpg, id=330, 598.3956pt x 845.559pt>
 File: imagens/quest-dev-3.jpg Graphic file (type jpg)
 <use imagens/quest-dev-3.jpg>
-Package pdftex.def Info: imagens/quest-dev-3.jpg  used on input line 46.
+Package pdftex.def Info: imagens/quest-dev-3.jpg  used on input line 49.
 (pdftex.def)             Requested size: 455.0pt x 642.95409pt.
  [29 <./imagens/quest-dev-2.jpg>]
 <imagens/quest-dev-4.jpg, id=336, 598.3956pt x 845.559pt>
 File: imagens/quest-dev-4.jpg Graphic file (type jpg)
 <use imagens/quest-dev-4.jpg>
-Package pdftex.def Info: imagens/quest-dev-4.jpg  used on input line 51.
+Package pdftex.def Info: imagens/quest-dev-4.jpg  used on input line 54.
 (pdftex.def)             Requested size: 455.0pt x 642.95409pt.
 ) [30 <./imagens/quest-dev-3.jpg>] (./pos-textual/indices.tex)) [31 <./imagens/quest-dev-4.jpg>]
 \tf@lof=\write5
