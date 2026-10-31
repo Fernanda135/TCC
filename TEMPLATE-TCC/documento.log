@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.8.6)  28 OCT 2026 19:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.8.6)  31 OCT 2026 14:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1545,70 +1545,75 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 ] [18
 
-]) (./capitulos/metodologia.tex [19])) [20
+]) (./capitulos/metodologia.tex [19] [20
+
+]) (./capitulos/conclusao.tex [21]) (./capitulos/declaracao-ia.tex [22
+
+])) [23
+
 
 ]
 \openout2 = `estrutura/pos-textual.aux'.
 
  (./estrutura/pos-textual.tex (./pos-textual/referencias.tex (./documento.bbl
 bibitemlist
-[21
+[24
 
 
-])) (./pos-textual/glossario.tex) (./pos-textual/apendices.tex [22] [23
+])) (./pos-textual/glossario.tex) (./pos-textual/apendices.tex [25] [26
 
 
 ]
-<imagens/quest-jog-1.jpg, id=298, 598.3956pt x 845.559pt>
+<imagens/quest-jog-1.jpg, id=341, 598.3956pt x 845.559pt>
 File: imagens/quest-jog-1.jpg Graphic file (type jpg)
 <use imagens/quest-jog-1.jpg>
 Package pdftex.def Info: imagens/quest-jog-1.jpg  used on input line 15.
 (pdftex.def)             Requested size: 455.0pt x 642.95409pt.
-<imagens/quest-jog-2.jpg, id=299, 598.3956pt x 845.559pt>
+<imagens/quest-jog-2.jpg, id=342, 598.3956pt x 845.559pt>
 File: imagens/quest-jog-2.jpg Graphic file (type jpg)
 <use imagens/quest-jog-2.jpg>
 Package pdftex.def Info: imagens/quest-jog-2.jpg  used on input line 20.
 (pdftex.def)             Requested size: 455.0pt x 642.95409pt.
- [24
+ [27
 
  <./imagens/quest-jog-1.jpg>]
-<imagens/quest-jog-3.jpg, id=306, 598.3956pt x 845.559pt>
+<imagens/quest-jog-3.jpg, id=348, 598.3956pt x 845.559pt>
 File: imagens/quest-jog-3.jpg Graphic file (type jpg)
 <use imagens/quest-jog-3.jpg>
 Package pdftex.def Info: imagens/quest-jog-3.jpg  used on input line 25.
 (pdftex.def)             Requested size: 455.0pt x 642.95409pt.
- [25 <./imagens/quest-jog-2.jpg>]
-<imagens/quest-jog-4.jpg, id=312, 598.3956pt x 845.559pt>
+ [28 <./imagens/quest-jog-2.jpg>]
+<imagens/quest-jog-4.jpg, id=354, 598.3956pt x 845.559pt>
 File: imagens/quest-jog-4.jpg Graphic file (type jpg)
 <use imagens/quest-jog-4.jpg>
 Package pdftex.def Info: imagens/quest-jog-4.jpg  used on input line 30.
 (pdftex.def)             Requested size: 455.0pt x 642.95409pt.
- [26 <./imagens/quest-jog-3.jpg>] [27 <./imagens/quest-jog-4.jpg>]
-<imagens/quest-dev-1.jpg, id=323, 598.3956pt x 845.559pt>
+ [29 <./imagens/quest-jog-3.jpg>] [30 <./imagens/quest-jog-4.jpg>]
+<imagens/quest-dev-1.jpg, id=366, 598.3956pt x 845.559pt>
 File: imagens/quest-dev-1.jpg Graphic file (type jpg)
 <use imagens/quest-dev-1.jpg>
 Package pdftex.def Info: imagens/quest-dev-1.jpg  used on input line 39.
 (pdftex.def)             Requested size: 455.0pt x 642.95409pt.
-<imagens/quest-dev-2.jpg, id=324, 598.3956pt x 845.559pt>
+<imagens/quest-dev-2.jpg, id=367, 598.3956pt x 845.559pt>
 File: imagens/quest-dev-2.jpg Graphic file (type jpg)
 <use imagens/quest-dev-2.jpg>
 Package pdftex.def Info: imagens/quest-dev-2.jpg  used on input line 44.
 (pdftex.def)             Requested size: 455.0pt x 642.95409pt.
- [28
+ [31
 
  <./imagens/quest-dev-1.jpg>]
-<imagens/quest-dev-3.jpg, id=330, 598.3956pt x 845.559pt>
+<imagens/quest-dev-3.jpg, id=373, 598.3956pt x 845.559pt>
 File: imagens/quest-dev-3.jpg Graphic file (type jpg)
 <use imagens/quest-dev-3.jpg>
 Package pdftex.def Info: imagens/quest-dev-3.jpg  used on input line 49.
 (pdftex.def)             Requested size: 455.0pt x 642.95409pt.
- [29 <./imagens/quest-dev-2.jpg>]
-<imagens/quest-dev-4.jpg, id=336, 598.3956pt x 845.559pt>
+ [32 <./imagens/quest-dev-2.jpg>]
+<imagens/quest-dev-4.jpg, id=379, 598.3956pt x 845.559pt>
 File: imagens/quest-dev-4.jpg Graphic file (type jpg)
 <use imagens/quest-dev-4.jpg>
 Package pdftex.def Info: imagens/quest-dev-4.jpg  used on input line 54.
 (pdftex.def)             Requested size: 455.0pt x 642.95409pt.
-) [30 <./imagens/quest-dev-3.jpg>] (./pos-textual/indices.tex)) [31 <./imagens/quest-dev-4.jpg>]
+) [33 <./imagens/quest-dev-3.jpg>] (./pos-textual/indices.tex)) [34 <./imagens/quest-dev-4.jpg>]
 \tf@lof=\write5
 \openout5 = `documento.lof'.
 
@@ -1627,18 +1632,18 @@ L3 programming layer <2020/03/25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 43092 strings out of 476162
- 866590 string characters out of 5794815
+ 43143 strings out of 476162
+ 867392 string characters out of 5794815
  1941975 words of memory out of 5000000
- 63956 multiletter control sequences out of 15000+600000
- 597567 words of font info for 214 fonts, out of 8000000 for 9000
+ 63979 multiletter control sequences out of 15000+600000
+ 597691 words of font info for 218 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 115i,17n,134p,1274b,712s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 115i,17n,134p,1274b,708s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on documento.pdf (32 pages, 2369438 bytes).
+Output written on documento.pdf (35 pages, 2374677 bytes).
 PDF statistics:
- 483 PDF objects out of 1000 (max. 8388607)
- 402 compressed objects within 5 object streams
- 104 named destinations out of 1000 (max. 500000)
- 51590 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 555 PDF objects out of 1000 (max. 8388607)
+ 471 compressed objects within 5 object streams
+ 120 named destinations out of 1000 (max. 500000)
+ 51662 words of extra memory for PDF output out of 61914 (max. 10000000)
 
